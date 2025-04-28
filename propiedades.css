@@ -1,0 +1,328 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.logo{
+    width: 150px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.navegador{
+    background-color: beige;
+    padding: 20px;
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    height: 20px;
+    font-size: 15px;
+}
+
+.home{
+    background-image: url("../img/home.png");
+    height:633px;
+    padding: 20px;}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+p{
+    text-align: justify;
+    padding:  15px  30px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+.propiedad{
+    width: 150px;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+
+.propiedad1{
+    display: grid;
+    grid-template-rows: repeat(2,300px);
+    grid-template-areas: 'espacio fotos fotos';
+    
+}
+
+.moderna{
+    display: flex;
+    grid-area: fotos fotos;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.propiedad2{
+    display: grid;
+    grid-template-rows: repeat(2,300px);
+    grid-template-areas: 'espacio fotos fotos';
+    
+}
+
+.ciudad{
+    display: flex;
+    grid-area: fotos fotos;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.propiedad3{
+    display: grid;
+    grid-template-rows: repeat(2,300px);
+    grid-template-areas: 'espacio fotos fotos';
+    
+}
+
+.montaña{
+    display: flex;
+    grid-area: fotos fotos;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.propiedad4{
+    display: grid;
+    grid-template-rows: repeat(2,300px);
+    grid-template-areas: 'espacio fotos fotos';
+    
+}
+
+.playa{
+    display: flex;
+    grid-area: fotos fotos;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#lightbox-image{
+    width: 800px;
+}
+
+
+
+
+
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    border-radius: 20px;
+}
+
+.info_compra{
+    display: flex;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 'info espacio';
+}
+
+.info{
+    text-align: center;
+    grid-area: info;
+    margin-left: 400px;
+}
+
+.sj{
+    margin-left: 180px;
+}
+
+.boton__comprar{
+    justify-content: center;
+    grid-area: comprar;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #0073e6;
+    border-width: 5px;
+    margin-left: 400px;
+    margin-top: 30px;
+    border: #0073e6;
+}
+
+.comprar{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+@media (max-width:900px)  {
+    h1{
+        font-size: 30px;
+    }
+    .logo{
+        width: 100px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+    .botones{
+        margin: 0;
+        margin-top: 30px;
+        font-size: 10px;
+        margin-left: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    
+    .propiedad{
+        padding: 50px;
+    }
+
+    .propiedad1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 'fotos'
+        
+    }
+
+    .moderna{
+        display: grid;
+        grid-area: fotos fotos;
+        width: 150px;
+        height: 100px;
+        cursor: pointer;
+        }
+
+            .propiedad2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 'fotos'
+        
+    }
+
+    .ciudad{
+        display: grid;
+        grid-area: fotos fotos;
+        width: 200px;
+        height: 170px;
+        cursor: pointer;
+        margin: 0px;
+        }
+
+        .propiedad3{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-areas: 'fotos'
+            
+        }
+    
+        .montaña{
+            display: grid;
+            grid-area: fotos fotos;
+            width: 200px;
+            height: 170px;
+            cursor: pointer;
+            margin: 0px;
+            }
+
+            .propiedad4{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-areas: 'fotos'
+                
+            }
+        
+            .playa{
+                display: grid;
+                grid-area: fotos fotos;
+                width: 200px;
+                height: 170px;
+                cursor: pointer;
+                margin: 0px;
+                }
+
+    .moderna{
+        display: grid;
+        grid-area: fotos fotos;
+        width: 200px;
+        height: 170px;
+        cursor: pointer;
+        margin: 0px;
+        }
+
+    #lightbox-image{
+        width: 500px;
+    }
+
+    .info_compra{
+        display: block;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: 'info '
+                            'espacio';
+    }
+
+    .info{
+        margin: 0;
+    }
+
+    .boton__comprar{
+        margin:0;
+        margin-top: 15px;
+    }
+}
+
